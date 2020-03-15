@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Cricket</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main">activity_main</string>
+    <string name="title_activity_match_detail">matchDetail</string>
+    <string name="title_activity_show_match_details">ShowMatchDetails</string>
+</resources>
