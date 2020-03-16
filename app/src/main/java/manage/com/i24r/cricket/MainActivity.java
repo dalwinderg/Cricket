@@ -1,5 +1,6 @@
 package manage.com.i24r.cricket;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.content.UriMatcher;
 import android.support.v4.app.Fragment;
@@ -37,56 +38,26 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        btn=(Button)findViewById(R.id.button);
-        btn.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                // TODO Auto-generated method stub
-
-                getmatchdetails();
-
-
-            }
-        });
+        setContentView(R.layout.activity_main3);
+//        btn=(Button)findViewById(R.id.button);
+//        btn.setOnClickListener(new View.OnClickListener() {
+//
+//            @Override
+//            public void onClick(View v) {
+//                // TODO Auto-generated method stub
+//
+//
+//
+//                getmatchdetails();
+//
+//
+//            }
+//        });
 
 
     }
 
 
 
-    public void getmatchdetails() {
 
-        RequestQueue queue = Volley.newRequestQueue(this);
-        try {
-
-            JsonObjectRequest getRequest = new JsonObjectRequest(Request.Method.GET, Util.urlgetmatch, null,
-                    new Response.Listener<JSONObject>()
-                    {
-                        @Override
-                        public void onResponse(JSONObject response) {
-                            // display response
-                            Log.d("Response", response.toString());
-                            Intent i = new Intent(MainActivity.this, matchDetail.class);
-                            i.putExtra("json",response.toString());
-                            startActivity(i);
-
-                        }
-                    },
-                    new Response.ErrorListener()
-                    {
-                        @Override
-                        public void onErrorResponse(VolleyError error) {
-
-                        }
-                    }
-            );
-            queue.add(getRequest);
-
-
-        } catch (Exception exception) {
-            Log.d("Chak", "" + exception);
-        }
-    }
 }

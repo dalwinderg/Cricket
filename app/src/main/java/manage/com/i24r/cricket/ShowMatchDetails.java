@@ -31,20 +31,24 @@ public class ShowMatchDetails extends AppCompatActivity {
         setContentView(R.layout.activity_show_match_details);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
+        final Intent intent = getIntent();
          t=findViewById(R.id.stat);
          t1=findViewById(R.id.score);
          t2=findViewById(R.id.details);
 
-        final Intent intent = getIntent();
+
+
+
         String d=""+intent.getStringExtra("id");
+
+
 
        getmatchdetails(d);
     }
 
 
     public void getmatchdetails(String id) {
-
+        Log.d("Response", id);
         RequestQueue queue = Volley.newRequestQueue(this);
         try {
 
@@ -85,4 +89,7 @@ public class ShowMatchDetails extends AppCompatActivity {
             Log.d("Chak", "" + exception);
         }
     }
+
+
+
 }

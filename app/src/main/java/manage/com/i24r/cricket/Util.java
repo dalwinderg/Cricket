@@ -10,7 +10,9 @@ public class Util {
 
     public static String urlgetmatch="https://cricapi.com/api/matches?apikey=pxHW5UucDVSnou7KdVAazOLEI692";
     public static String urlgetmatchSingleDetails="https://cricapi.com/api/cricketScore?apikey=pxHW5UucDVSnou7KdVAazOLEI692&unique_id=";
+    public static String urlgetmatchPlayerdetailsDetails="https://cricapi.com/api/playerFinder?apikey=pxHW5UucDVSnou7KdVAazOLEI692&name=";
 
+    public static String datajson="";
     public static String readResponse(HttpResponse res) {
         InputStream is=null;
         String return_text="";
