@@ -54,7 +54,7 @@ public class Main3Activity extends AppCompatActivity
 
         // Insert the fragment by replacing any existing fragment
         FragmentManager fragmentManager = getSupportFragmentManager();
-        fragmentManager.beginTransaction().replace(R.id.contentContainer, fragment)
+        fragmentManager.beginTransaction().replace(R.id.contentContainer, fragment).addToBackStack("hgh")
                 .commit();
     }
 
