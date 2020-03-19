@@ -36,10 +36,9 @@
         android:shadowDy="0"
         android:shadowRadius="5"
 
+        android:text="Find Player By Name"
         android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        android:text="Find Player By Name" />
-
+        android:textSize="20sp" />
 
 
 </LinearLayout>

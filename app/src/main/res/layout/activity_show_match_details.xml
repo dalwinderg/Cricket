@@ -11,22 +11,22 @@
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/colorAccent"
-        android:text="STAT"
-        android:textAllCaps="true"
         android:layout_marginLeft="150sp"
         android:layout_marginTop="40sp"
+        android:background="@color/colorAccent"
+        android:text="STATISCTICS"
+        android:textAllCaps="true"
         android:textSize="30sp" />
 
     <TextView
         android:id="@+id/stat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:text="to"
-        android:background="#E65100"
         android:layout_marginTop="10sp"
-        android:textAllCaps="true"/>
+        android:background="#EA8F5D"
+        android:text="to :"
+        android:textAllCaps="true"
+        android:textSize="30sp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -42,11 +42,11 @@
         android:id="@+id/score"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:text="s"
-        android:background="#76FF03"
         android:layout_marginTop="10sp"
-        android:textAllCaps="true"/>
+        android:background="#ADE67C"
+        android:text="score : "
+        android:textAllCaps="true"
+        android:textSize="30sp" />
 
     <TextView
 
@@ -63,10 +63,10 @@
         android:id="@+id/details"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#E040FB"
-        android:text="fun"
-        android:textAllCaps="true"
         android:layout_marginTop="10sp"
+        android:background="#E7A0F3"
+        android:text="fun :"
+        android:textAllCaps="true"
         android:textSize="30sp" />
 
 </LinearLayout>
